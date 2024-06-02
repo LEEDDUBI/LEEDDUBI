@@ -63,12 +63,12 @@
  - S, STAT:현재 프로세스의 상태 코드 (S: Sys V, STAT:BSD)
  - TIME:총 CPU 사용 시간
  - COMMAND: 프로세스의 실행 명령행
- - STIME
- - C, CP
- - F
- - PRI
- - NI
- - 
+ - STIME:프로세스가 시작된 시간 혹은 날짜
+ - C, CP:짧은 기간 동안의 CPU사용률(C: Sys V, CP:BSD)
+ - F:프로세스의 플래그
+ - PRI:실제 실행 우선순위
+ - NI:nice 우선순위 번호
+   
 
 
 ### 3. jops
