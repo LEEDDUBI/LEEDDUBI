@@ -1,7 +1,7 @@
 # 오픈소스SW개론 - README 파일 작성하기
 ## 리눅스 명령어
 
-### 1 top
+### 1. top
   - 리눅스 및 유닉스 시스템에서 실시간으로 시스템의 프로세스 상태와 시스템 리소스 사용량을 모니터링 하는 도구임.
   - 리눅스 시스템의 CPU 사용량, 메모리 사용량 등 전반적인 상황을 실시간으로 모니터링할 수 있는 명령어임.
   - 명령어를 실행하면 최상단 5줄에 top, Tasks, %Cpu(s), MIB Mem, MIB Swap 정보가 우선적으로 출력됨.
@@ -23,22 +23,31 @@
 - 1: CPU Core별로 사용량을 보여줌.
   
     
-### 2 ps
--* 현재 실행 중인 프로세스 목록과 상태를 보여줌.
+### 2. ps
+- 현재 실행 중인 프로세스 목록과 상태를 보여줌.
+- 정확한 옵션 사용이 중요함. (ex: a와 -a의 옵션이 다른 것처럼)
+- ps[option]의 사용
 
-- jops
+  #### ps 옵션들
+  
+ - -A: 모든 프로세스를 출력함.
+ - a: 터미널과 관련된 프로세스를 출력함.
+ - -a: 세션 리더를 제외하고 데몬 프로세스처럼 터미널에 종속되지 않은 모든 프로세스를 출력함.
+ - -e: 커널 프로세스를 제외한 모든 프로세스를 출력함.
+ - -f: 풀 포맷을 보여줌.
+ - -o: 출력 포맷을 지정하는 옵션(pid,tty,time,cmd)
+ - -m: 64비트 프로세스를 보여줌.
+ - -p 특정 PID를 지정할 때 사용함.
+ - -r: 실행 중인 프로세스를 보여줌.
+ - -u:특정 사용자의 프로세스 정보를 확인할 때 사용함. (사용자를 지정하지 않으면 현재를 기준)
+ - -x: 로그인 상태에 있는 동안 아직 완료되지 않은 프로세스를 보여줌.
+
+### 3. jops
+- 백그라운드에서 실행된 프로그램이나 작업 목록을 보여주는 명령어임.
+- jops[옵션] [작업번호] 명령어로 사용함
+
+  
+
 - kill
 
 
-- 👋 Hi, I’m @LEEDDUBI
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-LEEDDUBI/LEEDDUBI is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
